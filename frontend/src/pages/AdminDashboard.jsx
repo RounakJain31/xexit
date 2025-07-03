@@ -3,7 +3,7 @@ import { useAuth } from "../AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
-import { axiosApi } from "../utils/axios";
+import { axiosApi } from "../utlis/axioss";
 import Loader from "../components/Loader";
 
 const AdminDashboard = () => {

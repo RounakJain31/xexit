@@ -1,10 +1,12 @@
 const express = require("express");
-const { isEmployee, isExEmp } = require("../middleware/auth");
 const {
-  submitResignation,
-  submitResponses,
-} = require("../controllers/user.controller");
+  registerUser,
+  loginUser,
+  getUser,
+} = require("../controllers/auth.controller");
+const { isLoggedIn } = require("../middleware/auth");
 const router = express.Router();
-router.post("/resign", isEmployee, submitResignation);
-router.post("/responses", isExEmp, submitResponses);
+router.post("/register", registerUser);
+router.post("/login", loginUser);
+router.get("/get-logged-user", isLoggedIn, getUser);
 module.exports = router;

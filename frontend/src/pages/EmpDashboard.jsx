@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { axiosApi } from "../utils/axios";
+import { axiosApi } from "../utlis/axioss";
 import { useAuth } from "../AuthProvider";
 import { toast } from "react-toastify";
 import Loader from "../components/Loader";

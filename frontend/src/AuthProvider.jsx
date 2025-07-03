@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { createContext } from "react";
-import { axiosApi } from "./utils/axios";
+import { axiosApi } from "./utlis/axioss";
 const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
